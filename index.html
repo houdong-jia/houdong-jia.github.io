@@ -374,7 +374,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2018-09-29 11:51:26" itemprop="dateModified" datetime="2018-09-29T11:51:26+08:00">2018-09-29</time>
+                <time title="Updated at: 2018-09-29 22:31:15" itemprop="dateModified" datetime="2018-09-29T22:31:15+08:00">2018-09-29</time>
               
             
           </span>
@@ -459,7 +459,59 @@
 <li>在浏览器中地址栏中输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br><img src="img/localhost.png" alt="localhost:4000"></li>
 <li>如图看到的及时hexo的初始化页面</li>
 </ul>
-<h2 id="托管到Github"><a href="#托管到Github" class="headerlink" title="托管到Github"></a>托管到Github</h2><h2 id="新建上传博客"><a href="#新建上传博客" class="headerlink" title="新建上传博客"></a>新建上传博客</h2><h2 id="更换皮肤"><a href="#更换皮肤" class="headerlink" title="更换皮肤"></a>更换皮肤</h2>
+<h2 id="托管到Github"><a href="#托管到Github" class="headerlink" title="托管到Github"></a>托管到Github</h2><h3 id="配置Git个人信息"><a href="#配置Git个人信息" class="headerlink" title="配置Git个人信息"></a>配置Git个人信息</h3><ul>
+<li><p>设置Git的user name和email：(如果是第一次的话)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的邮箱&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成ssh密匙</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;gdutxiaoxu@163.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="配置仓库信息"><a href="#配置仓库信息" class="headerlink" title="配置仓库信息"></a>配置仓库信息</h3><ul>
+<li>找到 E:/blog/_config.yml 配置文件的最后一项 Deployment</li>
+<li>将配置修改为<blockquote>
+<p>deploy:<br>  type: git<br>  repository: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:<code>yourgithubname</code>/<code>yourgithubname</code>.github.io.git<br>  branch: master</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h3><ul>
+<li>部署文件准备上线 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>小几率会报错 如果报错执行 <code>npm i hexo</code> 然后重新执行 <code>hexo g</code></p>
+</blockquote>
+<ul>
+<li>正式上传<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>大几率会报错 如果报错执行 <code>npm i hexo-deployer-git</code> 然后重新执行 <code>hexo g</code> 和 <code>hexo d</code></p>
+</blockquote>
+<ul>
+<li>上传成功 在github中会看到和博客相关的项目中有了好多文件</li>
+<li>线上测试 在浏览器输入<code>yourgithubname</code>.github.io 网址即可<blockquote>
+<p>注意事项: 因为 github 的服务器也在国外 可能需要几分钟开会更新</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="写博客、发布文章"><a href="#写博客、发布文章" class="headerlink" title="写博客、发布文章"></a>写博客、发布文章</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;article title&quot;</span><br></pre></td></tr></table></figure>
+<p>这时候在我的电脑的目录下 E:\blog\source\ _posts 将会看到 article title.md 文件 编辑即可</p>
+<h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h3><ul>
+<li>hexo g   // 生成</li>
+<li>hexo d   // 部署</li>
+<li>上面两条命令可以简写成 hexo d -g </li>
+</ul>
+<h2 id="更换皮肤"><a href="#更换皮肤" class="headerlink" title="更换皮肤"></a>更换皮肤</h2><ul>
+<li>百度一下，找到一个合适的皮肤主题</li>
+<li>克隆下来以后是一个 themes 文件夹，我们要找到这个文件夹里面的内容- 找主题名称的文件夹（next） 以next主题为例</li>
+<li>把 next 这个文件夹放在我们博客的目录内blog/themes</li>
+<li>设置主题，来到 config.yml 文件内部（这个是对 hexo 进行的配置）</li>
+<li>找到 theme: landscape</li>
+<li>把后面的名称改成你的主题名称 next</li>
+<li>在 themes/next/config.yml 的文件,这个文件是对主题进行的一些配置,主题多种多样,配置方式多种多样,参考相关文档即可</li>
+</ul>
+
           
         
       
