@@ -108,24 +108,29 @@
 
 
 
-  <meta name="description" content="Every day to be a little better">
-<meta name="keywords" content="Hexo,jiahoudong,web,git,Kylo">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kylo">
-<meta property="og:url" content="https://houdong-jia.github.io/index.html">
+  <meta name="description" content="前言一个前端小白,用来记录前端学习历程,在网上查了诸多资料,搭建起了独立的博客,独立的才是自己的.现在写下此文,分享给大家,过程很繁琐,耐住性子. 环境搭建Node.js 的安装和准备 Node.js 去官方网站 根据操作系统去下载即可 然后一路next 傻瓜式安装 打开cmd黑窗口 验证是否安装成功  验证node 1node -v  验证npm 1npm -v    返回版本号即为安装成功,n">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何搭建Hexo+Github博客">
+<meta property="og:url" content="https://houdong-jia.github.io/2018/09/28/hexo/index.html">
 <meta property="og:site_name" content="Kylo">
-<meta property="og:description" content="Every day to be a little better">
+<meta property="og:description" content="前言一个前端小白,用来记录前端学习历程,在网上查了诸多资料,搭建起了独立的博客,独立的才是自己的.现在写下此文,分享给大家,过程很繁琐,耐住性子. 环境搭建Node.js 的安装和准备 Node.js 去官方网站 根据操作系统去下载即可 然后一路next 傻瓜式安装 打开cmd黑窗口 验证是否安装成功  验证node 1node -v  验证npm 1npm -v    返回版本号即为安装成功,n">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="https://houdong-jia.github.io/2018/09/28/hexo/img/hexo-v.png">
+<meta property="og:image" content="https://houdong-jia.github.io/2018/09/28/hexo/img/hexo%20s.png">
+<meta property="og:image" content="https://houdong-jia.github.io/2018/09/28/hexo/img/localhost.png">
+<meta property="og:updated_time" content="2018-09-29T03:51:26.447Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kylo">
-<meta name="twitter:description" content="Every day to be a little better">
+<meta name="twitter:title" content="如何搭建Hexo+Github博客">
+<meta name="twitter:description" content="前言一个前端小白,用来记录前端学习历程,在网上查了诸多资料,搭建起了独立的博客,独立的才是自己的.现在写下此文,分享给大家,过程很繁琐,耐住性子. 环境搭建Node.js 的安装和准备 Node.js 去官方网站 根据操作系统去下载即可 然后一路next 傻瓜式安装 打开cmd黑窗口 验证是否安装成功  验证node 1node -v  验证npm 1npm -v    返回版本号即为安装成功,n">
+<meta name="twitter:image" content="https://houdong-jia.github.io/2018/09/28/hexo/img/hexo-v.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://houdong-jia.github.io/"/>
+  <link rel="canonical" href="https://houdong-jia.github.io/2018/09/28/hexo/"/>
 
 
 
@@ -135,7 +140,7 @@
   };
 </script>
 
-  <title>Kylo</title>
+  <title>如何搭建Hexo+Github博客 | Kylo</title>
   
 
 
@@ -182,8 +187,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <a href="https://github.com/houdong-jia" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -294,9 +298,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -328,11 +332,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/houdong-jia.github.io/2018/09/28/hexo/" itemprop="url">
-                  如何搭建Hexo+Github博客
-                </a>
+          <h1 class="post-title" itemprop="name headline">如何搭建Hexo+Github博客
               
             
           </h1>
@@ -407,9 +407,7 @@
       
 
       
-        
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一个前端小白,用来记录前端学习历程,在网上查了诸多资料,搭建起了独立的博客,独立的才是自己的.<br>现在写下此文,分享给大家,过程很繁琐,耐住性子.</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一个前端小白,用来记录前端学习历程,在网上查了诸多资料,搭建起了独立的博客,独立的才是自己的.<br>现在写下此文,分享给大家,过程很繁琐,耐住性子.</p>
 <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h3 id="Node-js-的安装和准备"><a href="#Node-js-的安装和准备" class="headerlink" title="Node.js 的安装和准备"></a>Node.js 的安装和准备</h3><ul>
 <li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a> 去官方网站 根据操作系统去下载即可</li>
 <li>然后一路next 傻瓜式安装</li>
@@ -460,8 +458,6 @@
 <li>如图看到的及时hexo的初始化页面</li>
 </ul>
 <h2 id="托管到Github"><a href="#托管到Github" class="headerlink" title="托管到Github"></a>托管到Github</h2><h2 id="新建上传博客"><a href="#新建上传博客" class="headerlink" title="新建上传博客"></a>新建上传博客</h2><h2 id="更换皮肤"><a href="#更换皮肤" class="headerlink" title="更换皮肤"></a>更换皮肤</h2>
-          
-        
       
     </div>
 
@@ -479,301 +475,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://houdong-jia.github.io/houdong-jia.github.io/2018/09/28/markdown/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jiahoudong">
-      <meta itemprop="description" content="Every day to be a little better">
-      <meta itemprop="image" content="/houdong-jia.github.io/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kylo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/houdong-jia.github.io/2018/09/28/markdown/" itemprop="url">
-                  Markdown简介及常用语法
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-09-28 15:38:45" itemprop="dateCreated datePublished" datetime="2018-09-28T15:38:45+08:00">2018-09-28</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2018-09-29 10:43:29" itemprop="dateModified" datetime="2018-09-29T10:43:29+08:00">2018-09-29</time>
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/houdong-jia.github.io/tags/hexo/" rel="tag"># hexo</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
-<li>Markdown 是一种轻量级的「标记语言」，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被「标记」、「语言」所迷惑，Markdown 的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的 HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。</li>
-</ul>
-<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
-<li>专注你的文字内容而不是排版样式，安心写作。</li>
-<li>轻松的导出 HTML、PDF 和本身的 .md 文件。</li>
-<li>纯文本内容，兼容所有的文本编辑器与字处理软件。</li>
-<li>随时修改你的文章版本，不必像字处理软件生成若干文件版本导致混乱。</li>
-<li>可读、直观、学习成本低。</li>
-</ul>
-<h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><blockquote>
-<p>示例 </p>
-</blockquote>
-<pre><code>## 二级标题
-### 三级标题
-#### 四级标题
-......
-###### 六级标题
-</code></pre><blockquote>
-<p>源码<br>    <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line">......</span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ol>
-<li><p>无序列表</p>
-<blockquote>
-<p>示例</p>
-<pre><code>- 1
-- 2
-- 3
-</code></pre></blockquote>
-<blockquote>
-<p>源码</p>
-<pre><code><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>1</span><br><span class="line"><span class="bullet">- </span>2</span><br><span class="line"><span class="bullet">- </span>3</span><br></pre></td></tr></table></figure>
-</code></pre></blockquote>
-</li>
-<li><p>有序列表</p>
-<blockquote>
-<p>示例</p>
-<pre><code>1. 1
-2. 1
-3. 1
-</code></pre></blockquote>
-<blockquote>
-<p>源码</p>
-<pre><code><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>1</span><br><span class="line"><span class="bullet">2. </span>2</span><br><span class="line"><span class="bullet">3. </span>3</span><br></pre></td></tr></table></figure>
-</code></pre></blockquote>
-</li>
-</ol>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><blockquote>
-<p>示例<br>一层</p>
-<blockquote>
-<p>二层</p>
-<blockquote>
-<p>三层</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>源码<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 一层</span></span><br><span class="line"><span class="code">    &gt;&gt; 二层</span></span><br><span class="line"><span class="code">        &gt;&gt;&gt; 三层</span></span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h3><ol>
-<li><p>图片</p>
-<blockquote>
-<p>示例<br> <img src="img/md.jpg" alt="markdown"></p>
-</blockquote>
-<blockquote>
-<p>源码</p>
- <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">markdown</span>](<span class="link">img/md.jpg</span>)</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>链接</p>
-<blockquote>
-<p>示例<br> <a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
-</blockquote>
-<blockquote>
-<p>源码</p>
- <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com</span>)</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-</ol>
-<h3 id="粗体-斜体-删除线"><a href="#粗体-斜体-删除线" class="headerlink" title="粗体 斜体 删除线"></a>粗体 斜体 删除线</h3><blockquote>
-<p>示例<br>    <strong>这里是粗体</strong> <em>这里是斜体</em> <del>这里是删除线</del></p>
-</blockquote>
-<blockquote>
-<p>源码<br>    <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**这里是粗体**</span> <span class="emphasis">*这里是斜体*</span> ~~这里是删除线~~</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><blockquote>
-<p>示例</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">姓名</th>
-<th style="text-align:center">年龄</th>
-<th style="text-align:center">身高</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">张三</td>
-<td style="text-align:center">18</td>
-<td style="text-align:center">180</td>
-</tr>
-<tr>
-<td style="text-align:center">李四</td>
-<td style="text-align:center">20</td>
-<td style="text-align:center">175</td>
-</tr>
-<tr>
-<td style="text-align:center">王五</td>
-<td style="text-align:center">25</td>
-<td style="text-align:center">176</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>源码<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 姓名 | 年龄 | 身高 |</span><br><span class="line">|:------:|:-----:|:-----:|</span><br><span class="line">|张三|18|180|</span><br><span class="line">|李四|20|175|</span><br><span class="line">|王五|25|176|</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h3><blockquote>
-<p>示例<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> b = <span class="number">3</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a + b);</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>源码<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = 2;</span><br><span class="line">var b = 3;</span><br><span class="line">console.log(a + b);</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><blockquote>
-<p>实例<br>我是小型<code>代码块</code>啊</p>
-</blockquote>
-<blockquote>
-<p>源码<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我是小型<span class="code">``代码块`</span>`啊</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><blockquote>
-<p>实例</p>
-</blockquote>
-<hr>
-<blockquote>
-<p>源码<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">***</span></span><br></pre></td></tr></table></figure></p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/houdong-jia.github.io/2018/09/28/markdown/" rel="next" title="Markdown简介及常用语法">
+                <i class="fa fa-chevron-left"></i> Markdown简介及常用语法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -783,14 +514,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -811,8 +543,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -912,6 +653,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境搭建"><span class="nav-number">2.</span> <span class="nav-text">环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-的安装和准备"><span class="nav-number">2.1.</span> <span class="nav-text">Node.js 的安装和准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git-的安装和配置"><span class="nav-number">2.2.</span> <span class="nav-text">git 的安装和配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#github-账户的配置"><span class="nav-number">2.3.</span> <span class="nav-text">github 账户的配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">3.2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初体验"><span class="nav-number">3.3.</span> <span class="nav-text">初体验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#托管到Github"><span class="nav-number">4.</span> <span class="nav-text">托管到Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建上传博客"><span class="nav-number">5.</span> <span class="nav-text">新建上传博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换皮肤"><span class="nav-number">6.</span> <span class="nav-text">更换皮肤</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1047,6 +804,10 @@
 
 
   
+  <script type="text/javascript" src="/houdong-jia.github.io/js/src/scrollspy.js?v=6.4.1"></script>
+<script type="text/javascript" src="/houdong-jia.github.io/js/src/post-details.js?v=6.4.1"></script>
+
+
 
   
 
